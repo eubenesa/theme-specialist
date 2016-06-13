@@ -106,6 +106,15 @@
               {% endfor %}
             </select>
 
+            <div class="prod-alt-input-wrapper">
+              <input class="prod-alt-input-engrave" type="text" name="properties[Text to engrave on wheel]" placeholder="Text to engrave on wheel" required>
+            </div>
+
+            <div class="prod-alt-input-wrapper">
+              <input class="prod-alt-input-gift" type="checkbox" name="properties[This is a gift]" value="Yes">
+              <label>This is a gift</label>
+            </div>
+
             {% comment %}
               Not using the quantity selector in this theme. Uncomment to enable
             {% endcomment %}
