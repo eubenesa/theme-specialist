@@ -1174,6 +1174,11 @@
         "id": "skip_first_product_image",
         "label": "Skip first product image",
         "info" : "Make the first image for each product only appear on the collections page of your store. [Learn more](https://docs.shopify.com/manual/more/official-shopify-themes/boundless#skip-first-product-image-option)."
+      },
+      {
+        "type": "color",
+        "id": "color_add_to_cart_btn",
+        "label": "Add to cart button color"
       }
     ]
   },
