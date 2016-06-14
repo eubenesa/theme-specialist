@@ -198,4 +198,15 @@
     addToCart: {{ 'products.product.add_to_cart' | t | json }},
     soldOut: {{ 'products.product.sold_out' | t | json }}
   }
+
+  let productHandle = '{{ product.handle }}';
+
+  $.getJSON('/cart.js', function(data) {
+    let items = data.items;
+    for (const item of items) {
+      if (item.handle === productHandle) {
+        $('.add-to-cart').text('Already in cart!');
+      }
+    }
+  });
 </script>
